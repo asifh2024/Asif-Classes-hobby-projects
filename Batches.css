@@ -140,6 +140,10 @@ nav ul li a.active,a:hover {
 
 
 @media(max-width: 886px) {
+	
+	.batches:hover {
+    transform: scale(1.07);
+	}
     #checkbtn{
         display: block;
         font-size: 26px;
@@ -167,6 +171,4 @@ nav ul li a.active,a:hover {
     }
 }
    
-.batches:hover {
-    transform: scale(1.07);
-}    
+    
