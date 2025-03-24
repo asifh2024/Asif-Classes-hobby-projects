@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #071b1a;
+    position: fixed;
+}
+
+label.logo {
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+    margin: 0 50px;
+    line-height: 80px;
+}
+
+nav ul {
+    float: right;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 8px 20px;
+   
+}
+
+nav ul li a.active,a:hover {
+    background-color: #033535;
+}
+
+#checkbtn {
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    font-size: 30px;
+    color: white;
+    display: none;
+}
+#check {
+    display: none;
+}
+
+#check:checked ~ ul {
+    left: 0;
+}
+
+.batch-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+  }
+  
+  .batches {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  
+  .batch-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .course-price {
+    font-size: 1.2em;
+    color: #c5a203;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .explore, .buy {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .explore {
+    background-color: #780457;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .buy {
+    background-color: #0d41b0d7;
+    color: white;
+    text-decoration: none;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #071b1a;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+  
+
+
+
+
+
+@media(max-width: 886px) {
+    #checkbtn{
+        display: block;
+        font-size: 26px;
+    }
+     nav ul {
+        width: 100%;
+        height: 100vh;
+        background-color: #052120;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+
+    }
+    nav ul li {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+    }
+    nav label.logo{
+        margin-left: 20px;
+       
+    }
+    label.logo {
+        font-size: 26px;
+    }
+}
+   
+.batches:hover {
+    transform: scale(1.07);
+}    
